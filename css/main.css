@@ -1,0 +1,117 @@
+:root{
+    --vermelho:#e50914;
+    --preto:#141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+
+@font-face {
+    font-family: Bebas Neue;
+    src: url(/img/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+    font-family: Trajan;
+    src:url(/img/Trajan\ Pro.ttf)
+}
+body {
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header .container{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 30px;
+
+}
+
+header .logo {
+    margin-left: 20px;
+    color:var(--vermelho);
+    font-family:'Bebas Neue', Arial;
+    font-size: 50px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color:#aaa;
+}
+
+/*livro principal*/
+
+main .titulo {
+    color:#fff;
+    font-family: 'Trajan', Arial;
+    font-size:35px;
+    margin-top: 60px;
+}
+
+main .descricao {
+    color:#fff;
+    margin-bottom: 30px;
+    margin-top: 20px;
+
+}
+
+main .livro-principal {
+    font-size: 16px;
+
+    background: linear-gradient(rgba(0,0,0,.40),rgba(0,0,0,.40)100%), url(/img/trono.png);
+    background-size: cover;
+
+    height: 400px;
+    width: 1450px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:flex-start;
+
+}
+
+main .container {
+    margin-left: 20px;
+}
+
+.livro-principal .container {
+    width:40%;
+
+}
+
+/*botoes de assistir*/
+
+.botao {
+    background-color: rgba(255,255,255,.10);
+    border:none;
+    color:white;
+    padding: 12px 24px;
+    margin-right: 5px;
+    font-size: 12px;
+
+    cursor: zoom-in;
+    transition: .3s ease all;
+
+}
+
+.botao:hover {
+    background: #fff;
+    color: black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
