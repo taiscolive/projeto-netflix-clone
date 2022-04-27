@@ -13,15 +13,15 @@
 
 @font-face {
     font-family: Bebas Neue;
-    src: url(/img/BebasNeue-Regular.ttf);
+    src: url(/img/fonte/BebasNeue-Regular.ttf);
 }
 
 @font-face {
     font-family: Trajan;
-    src:url(/img/Trajan\ Pro.ttf)
+    src:url(/img/fonte/Trajan\ Pro.ttf)
 }
 body {
-    background: var(--preto);
+    background: #090909;
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -58,12 +58,15 @@ main .titulo {
     font-family: 'Trajan', Arial;
     font-size:35px;
     margin-top: 60px;
+    margin-left: 0
 }
 
 main .descricao {
     color:#fff;
     margin-bottom: 30px;
     margin-top: 20px;
+    flex-direction: row;
+    display: flexs;
 
 }
 
@@ -79,7 +82,6 @@ main .livro-principal {
     display:flex;
     flex-direction:column;
     justify-content: center;
-    align-items:flex-start;
 
 }
 
@@ -90,6 +92,13 @@ main .container {
 .livro-principal .container {
     width:40%;
 
+}
+
+.item-estrela {
+    margin-top: 20px;
+    color: #e50914;
+    font-size: 20px;
+    
 }
 
 /*botoes de assistir*/
@@ -114,4 +123,24 @@ main .container {
 
 .botao i{
     margin-right: 8px;
+}
+
+/*carrossel*/
+
+.carrossel-livro {
+    height: 50%;
+    width:50%;
+    display:block;
+    margin-left: 20px;
+
+}
+
+h3  {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color:#fff;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+
 }
